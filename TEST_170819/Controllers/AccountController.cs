@@ -8,11 +8,12 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
+using TEST_170819.Filters;
 using TEST_170819.Models;
 
 namespace TEST_170819.Controllers
 {
-    [Authorize]
+    [Authorize, FilterFixRequest]
     public class AccountController : Controller
     {
         private ApplicationSignInManager _signInManager;

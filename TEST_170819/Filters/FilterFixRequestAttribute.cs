@@ -8,7 +8,7 @@ using TEST_170819.Models;
 
 namespace TEST_170819.Filters
 {
-    public class FilterFixRequest : FilterAttribute, IActionFilter
+    public class FilterFixRequestAttribute : FilterAttribute, IActionFilter
     {
         public T GetService<T>(ActionExecutedContext filterContext)
         {
